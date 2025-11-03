@@ -1,8 +1,6 @@
 build:
-  # Use Python 3.10 for compatibility with torch/audio libs
+  gpu: true 
   python_version: "3.10"
-
-  # Pull the model from Hugging Face during build (caches it)
   python_packages:
     - "torch==2.0.1 --index-url https://download.pytorch.org/whl/cu118"  # GPU support
     - "transformers==4.33.2"
@@ -13,7 +11,6 @@ build:
     - "numpy==1.24.3"
     - "resampy==0.4.2"  # For audio resampling
 
-  # Run setup script if needed (optional, empty here)
   run:
     - "pip install huggingface_hub"
     - "huggingface-cli download Plachta/Seed-VC --local-dir /src/model"
