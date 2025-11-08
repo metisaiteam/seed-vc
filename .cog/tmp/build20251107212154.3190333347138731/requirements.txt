@@ -1,0 +1,9 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.0.1
+transformers==4.33.2
+accelerate==0.21.0
+librosa==0.10.1
+soundfile==0.12.1
+scipy==1.11.2
+numpy==1.24.3
+resampy==0.4.2

@@ -13,6 +13,6 @@ build:
 
   run:
     - "pip install huggingface_hub"
-    - "huggingface-cli download Plachta/Seed-VC --local-dir /src/model"
+    - "huggingface-cli download Plachta/Seed-VC --local-dir /src/models/seed-vc"
 
 predict: "predict.py:Predictor"
